@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import { CreatePage, ExistPage, StartPage, RoomPage } from "./pages";
+import { useEffect, useState } from "react";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [username, setUsername] = useState("");
+
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<StartPage />} />
+                <Route path="/room/create" element={<CreatePage />} />
+                <Route path="/room/:id" element={<RoomPage />} />
+                <Route path="/room/exist" element={<ExistPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

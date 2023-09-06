@@ -1,0 +1,21 @@
+.main-button {
+    background-color: #fff; /* Green background */
+    border: 2px solid black; /* Green border */
+
+    border-radius: 0.75rem;
+    padding: 10px 24px; /* Some padding */
+    margin: 10px;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+}
+.main-button:hover {
+    background-color: #e4e4e4;
+    border: 2px solid rgb(15, 15, 15);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;  
+}

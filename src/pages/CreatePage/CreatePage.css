@@ -1,0 +1,22 @@
+.createPageContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;  
+}
+.room-title {
+    width: auto;   
+    height: min-content;
+    justify-content: space-between;
+    display: flex;
+    background-color: #fff;  
+}
+.refresh-button {
+    height:10;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+.refresh-icon-button{
+    height: 2.5vh;
+}
